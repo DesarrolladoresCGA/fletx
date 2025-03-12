@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { RickAndMortyServiceService } from '../../services/rick-and-morty-service.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
