@@ -1,0 +1,34 @@
+<!--persona 1-->
+<div class="row mt-5">
+    <div class="col-12 col-md-6 text-center ">
+        <h1 class="text-white fw-bold">Persona 1</h1>
+        <div class="chat-container text-start">
+            <div class="chat-messages bg-white">
+                <p *ngFor="let msg of serverService.mensajes">{{ msg }}</p>
+            </div>
+            <div class="d-flex">
+                <input type="text" class="w-100" [(ngModel)]="mensaje" (keyup.enter)="enviarMensaje()" placeholder="Escribe un mensaje...">
+                <button class=" bg-dark" (click)="enviarMensaje()">
+                    <i class="bi bi-arrow-right-circle-fill text-white fs-4"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 text-center">
+        <h1 class="text-white fw-bold">Persona 2</h1>
+        <!--persona 2-->
+        <div class="chat-container text-start">
+            <div class="chat-messages bg-white">
+                <p *ngFor="let msg of serverService.mensajes">{{ msg }}</p>
+            </div>
+            <div class="d-flex">
+                <input type="text" class="w-100" [(ngModel)]="mensaje" (keyup.enter)="enviarMensaje()" placeholder="Escribe un mensaje...">
+                <button class=" bg-dark" (click)="enviarMensaje()">
+                    <i class="bi bi-arrow-right-circle-fill text-white fs-4"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>

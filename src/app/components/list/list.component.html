@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-12">
+    <h1 class="text-white fw-bold py-5">Personajes</h1>
+  </div>
+    <div *ngFor="let person of personajes; let i = index;" class="col-12 col-md-4 col-xl-3">
+        <div class="card mb-5 border-0 mb-3 " (click)="viewDetail(person.id)">
+            <img [src]="person.image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h6 class="card-title">{{person.name}}</h6>
+                <p class="card-text fss-4">Genero: {{person.gender}}</p>
+                <h6 class="especie rounded-pill p-1 bg-danger fss-3 text-white fw-bod">{{person.species}}</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="d-flex aling-items-center justify-content-center">
+        <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item" [class.disabled]="page === 1">
+                <a class="page-link" (click)="changePage(page - 1)" href="#">Previous</a>
+              </li>
+              <!-- Mostrar solo las páginas dentro del rango -->
+              <li class="page-item d-none d-md-flex" *ngFor="let p of [].constructor(endPage - startPage + 1); let i = index" 
+                  [class.active]="startPage + i === page">
+                <a class="page-link" (click)="changePage(startPage + i)" href="#">{{ startPage + i }}</a>
+              </li>
+              <li class="page-item d-flex d-md-none">
+                <a class="page-link px-3 active">{{page}}</a>
+              </li>
+              <li class="page-item" [class.disabled]="page === numPages">
+                <a class="page-link" (click)="changePage(page + 1)" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+</div>

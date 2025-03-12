@@ -25,3 +25,33 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Dependencias intaladas
+## 📦 Dependencias Instaladas  
+
+- **JQuery, Boostrap, icons**  
+  ```bash
+  npm install jquery bootstrap --save
+  npm install jquery popper.js
+  npm i bootstrap-icons
+
+- **Mapas**  
+  ```bash
+  npm install leaflet@1.7.1
+  npm i @types/leaflet@1.4.5 -D
+  npm install leaflet-routing-machine
+
+- **Socket**  
+  ```bash
+    npm i socket.io-client
+
+## Instalar dependencias
+npm install
+
+## Start Servidor fletx/servidor puerto :3000
+npm run dev
+
+## Start project
+ng serve
+
+

@@ -1,0 +1,33 @@
+.card{
+    height: 400px;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+.especie{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+@media(max-width: 1025px){
+    .card{
+        height: 370px
+    }
+}
+
+@media(max-width: 930px){
+    .card{
+        height: 300px
+    }
+}
+
+@media(max-width: 650px){
+    .card{
+        height: auto;
+    }
+
+}

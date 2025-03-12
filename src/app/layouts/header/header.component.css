@@ -1,0 +1,16 @@
+nav {
+    border: 0 solid #CCC;  
+    border-bottom: 2px solid #CCC; 
+}
+li{
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+}
+li:hover{
+    text-decoration: underline;
+}
+img{
+    width: 40px;
+}

@@ -1,0 +1,13 @@
+img{
+    width: 70%;
+    border-radius: 100%;
+}
+.card-episodios{
+    height: 340px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card-episodios:hover{
+    transform: scale(1.03);
+}
+
